@@ -5,7 +5,7 @@ class CreateRecipes < ActiveRecord::Migration[6.1]
       t.string :img_url
       t.string :ingredients
       t.string :description
-      t.belongs_to :cookbooks
-      t.belongs_to :users
+      t.integer :cookbook_id
+    end
   end
 end
